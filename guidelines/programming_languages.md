@@ -2,11 +2,8 @@
 
 ## Common vulnerabilities
 
-- Type safety
-**Vulnerability:** Buffer Overflow, Use-After-Free (UAF)
-- Static or Dynamic library loading
-**Vulnerability:** Library hijacking, Library Sideloading
-- Compilation process
+- Memory errors. **Vulnerability:** Buffer Overflow, Use-After-Free (UAF), Buffer Over Read
+- Dependencies. **Vulnerability:** Library hijacking, Library Sideloading, Supply Chain attack
 
 
 ## Questions
@@ -18,12 +15,15 @@
 	- Does it have W^X protection?
 	 - Does it perform code isolation?
 - Is it an unmanaged programming language?
-	- Can it achieve type-safety? How is it achieved?
+	- How is memory handled?
+- Can it achieve type-safety? How is it achieved?
 - Are libraries statically or dynamically linked?
 - Can the programming language use compilation flags?
 	- Which flags are used?
 	- Are there security-related flags?
-
+- Does it perform type checking at the time of compilation?
+- How are dependencies implemented into the code?
 
 ## Resources
 - W^X: https://www.wikiwand.com/en/W%5EX
+- Type Checking: https://www.geeksforgeeks.org/type-checking-in-compiler-design/
